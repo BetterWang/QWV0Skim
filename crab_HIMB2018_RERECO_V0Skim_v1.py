@@ -5,25 +5,35 @@ from httplib import HTTPException
 
 config = config()
 
-config.General.requestName = 'HIMB0_RERECO_V0Skim_v2'
+config.General.requestName = 'HIMB0_RERECO_V0Skim_v3'
 config.General.workArea = 'CrabArea'
 config.General.transferOutputs = True
 config.General.transferLogs = False
 config.JobType.pluginName = 'Analysis'
-config.JobType.psetName = 'qw_PbPb18_withV0_Skim_v2.py'
+config.JobType.psetName = 'qw_PbPb18_withV0_Skim_v3.py'
 config.JobType.maxJobRuntimeMin = 2500
-config.JobType.inputFiles = ['HeavyIonRPRcd_PbPb2018_offline.db']
-config.Data.inputDataset = '/HIMinimumBias0/HIRun2018A-04Apr2019-v1/AOD'
+#config.JobType.inputFiles = ['HeavyIonRPRcd_PbPb2018_offline.db']
+config.Data.inputDataset = '/HIMinimumBias1/HIRun2018A-04Apr2019-v1/AOD'
 #config.Data.inputDBS = 'phys03'
 config.Data.splitting = 'LumiBased'
 config.Data.unitsPerJob = 5
-config.Data.outLFNDirBase = '/store/group/phys_heavyions/qwang/V0Production2018/'
-#config.Data.lumiMask = '/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions15/HI/Cert_262548-263757_PromptReco_HICollisions15_JSON_v2.txt'
+config.Data.outLFNDirBase = '/store/user/qwang/V0Production2018/'
+config.Data.lumiMask = '/afs/cern.ch/cms/CAF/CMSCOMM/COMM_DQM/certification/Collisions18/HI/PromptReco/Cert_326381-327564_HI_PromptReco_Collisions18_JSON.txt'
 config.Data.publication = True
-#config.Data.outputDatasetTag = ''
+config.Data.outputDatasetTag = 'V0Skim_v3'
 config.Data.useParent = False
-config.Site.storageSite = 'T2_CH_CERN'
+config.Site.storageSite = 'T2_US_Vanderbilt'
 ##config.Data.allowNonValidInputDataset = True
+#try:
+#        crabCommand('submit', config = config)
+#except HTTPException as hte:
+#        print "Failed submitting task: %s" % (hte.headers)
+#except ClientException as cle:
+#        print "Failed submitting task: %s" % (cle)
+#
+
+config.General.requestName = 'HIMB2_RERECO_V0Skim_v3'
+config.Data.inputDataset = '/HIMinimumBias2/HIRun2018A-04Apr2019-v1/AOD'
 try:
         crabCommand('submit', config = config)
 except HTTPException as hte:
@@ -31,4 +41,22 @@ except HTTPException as hte:
 except ClientException as cle:
         print "Failed submitting task: %s" % (cle)
 
+
+config.General.requestName = 'HIMB3_RERECO_V0Skim_v3'
+config.Data.inputDataset = '/HIMinimumBias3/HIRun2018A-04Apr2019-v1/AOD'
+try:
+        crabCommand('submit', config = config)
+except HTTPException as hte:
+        print "Failed submitting task: %s" % (hte.headers)
+except ClientException as cle:
+        print "Failed submitting task: %s" % (cle)
+
+config.General.requestName = 'HIMB4_RERECO_V0Skim_v3'
+config.Data.inputDataset = '/HIMinimumBias4/HIRun2018A-04Apr2019-v1/AOD'
+try:
+        crabCommand('submit', config = config)
+except HTTPException as hte:
+        print "Failed submitting task: %s" % (hte.headers)
+except ClientException as cle:
+        print "Failed submitting task: %s" % (cle)
 
