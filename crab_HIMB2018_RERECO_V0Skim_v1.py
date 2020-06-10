@@ -1,5 +1,5 @@
 from CRABAPI.RawCommand import crabCommand
-from CRABClient.UserUtilities import config, getUsernameFromSiteDB
+from CRABClient.UserUtilities import config
 from CRABClient.ClientExceptions import ClientException
 from httplib import HTTPException
 
@@ -105,9 +105,27 @@ config.Site.storageSite = 'T2_US_Vanderbilt'
 #        print "Failed submitting task: %s" % (hte.headers)
 #except ClientException as cle:
 #        print "Failed submitting task: %s" % (cle)
+#
+#config.General.requestName = 'HIMB13_RERECO_V0Skim_v3'
+#config.Data.inputDataset = '/HIMinimumBias13/HIRun2018A-04Apr2019-v1/AOD'
+#try:
+#        crabCommand('submit', config = config)
+#except HTTPException as hte:
+#        print "Failed submitting task: %s" % (hte.headers)
+#except ClientException as cle:
+#        print "Failed submitting task: %s" % (cle)
+#
+#config.General.requestName = 'HIMB15_RERECO_V0Skim_v3'
+#config.Data.inputDataset = '/HIMinimumBias15/HIRun2018A-04Apr2019-v1/AOD'
+#try:
+#        crabCommand('submit', config = config)
+#except HTTPException as hte:
+#        print "Failed submitting task: %s" % (hte.headers)
+#except ClientException as cle:
+#        print "Failed submitting task: %s" % (cle)
 
-config.General.requestName = 'HIMB13_RERECO_V0Skim_v3'
-config.Data.inputDataset = '/HIMinimumBias13/HIRun2018A-04Apr2019-v1/AOD'
+config.General.requestName = 'HIMB12_RERECO_V0Skim_v3'
+config.Data.inputDataset = '/HIMinimumBias12/HIRun2018A-04Apr2019-v1/AOD'
 try:
         crabCommand('submit', config = config)
 except HTTPException as hte:
