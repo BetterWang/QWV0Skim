@@ -152,9 +152,49 @@ config.Site.storageSite = 'T2_US_Vanderbilt'
 #
 
 config.Data.unitsPerJob = 1
-config.General.requestName = 'HIMB11_RERECO_V0Skim_v3_recovery_v2'
-config.Data.inputDataset = '/HIMinimumBias11/HIRun2018A-04Apr2019-v1/AOD'
-config.Data.lumiMask = 'MB11_recovery.json'
+#config.General.requestName = 'HIMB11_RERECO_V0Skim_v3_recovery_v2'
+#config.Data.inputDataset = '/HIMinimumBias11/HIRun2018A-04Apr2019-v1/AOD'
+#config.Data.lumiMask = 'MB11_recovery.json'
+#try:
+#        crabCommand('submit', config = config)
+#except HTTPException as hte:
+#        print "Failed submitting task: %s" % (hte.headers)
+#except ClientException as cle:
+#        print "Failed submitting task: %s" % (cle)
+#
+#config.General.requestName = 'HIMB10_RERECO_V0Skim_v3_recovery_v2'
+#config.Data.inputDataset = '/HIMinimumBias10/HIRun2018A-04Apr2019-v1/AOD'
+#config.Data.lumiMask = 'MB10_recovery.json'
+#try:
+#        crabCommand('submit', config = config)
+#except HTTPException as hte:
+#        print "Failed submitting task: %s" % (hte.headers)
+#except ClientException as cle:
+#        print "Failed submitting task: %s" % (cle)
+#
+#config.General.requestName = 'HIMB9_RERECO_V0Skim_v3_recovery_v2'
+#config.Data.inputDataset = '/HIMinimumBias9/HIRun2018A-04Apr2019-v1/AOD'
+#config.Data.lumiMask = 'MB9_recovery.json'
+#try:
+#        crabCommand('submit', config = config)
+#except HTTPException as hte:
+#        print "Failed submitting task: %s" % (hte.headers)
+#except ClientException as cle:
+#        print "Failed submitting task: %s" % (cle)
+#
+#config.General.requestName = 'HIMB8_RERECO_V0Skim_v3_recovery_v2'
+#config.Data.inputDataset = '/HIMinimumBias8/HIRun2018A-04Apr2019-v1/AOD'
+#config.Data.lumiMask = 'MB8_recovery.json'
+#try:
+#        crabCommand('submit', config = config)
+#except HTTPException as hte:
+#        print "Failed submitting task: %s" % (hte.headers)
+#except ClientException as cle:
+#        print "Failed submitting task: %s" % (cle)
+#
+config.General.requestName = 'HIMB6_RERECO_V0Skim_v3_recovery_v2'
+config.Data.inputDataset = '/HIMinimumBias6/HIRun2018A-04Apr2019-v1/AOD'
+config.Data.lumiMask = 'MB6_recovery.json'
 try:
         crabCommand('submit', config = config)
 except HTTPException as hte:

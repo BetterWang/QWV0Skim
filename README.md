@@ -26,6 +26,10 @@
 ## Produced Hydjet V0 Skim
 `/MinBias_Hydjet_Drum5F_2018_5p02TeV/qwang-crab_HydjetDrum5F_RECODEBUG_V0Skim_v2-4fb2a1ba2f6b043399c08fb9db565e25/USER`
 
+## Wrong Sign (Same Sign) pair V0 Skim
+
+- `/HIMinimumBias19/qwang-V0SkimWrongSign_v3-5f932986cf38f9e8dbd6c3aea7f6c2b4/USER`
+
 ## Setting up
 
 

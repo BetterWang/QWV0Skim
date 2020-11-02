@@ -142,8 +142,62 @@ config.Site.storageSite = 'T2_US_Vanderbilt'
 #except ClientException as cle:
 #        print "Failed submitting task: %s" % (cle)
 #
-config.General.requestName = 'HIMB10_RERECO_V0Skim_v3'
-config.Data.inputDataset = '/HIMinimumBias10/HIRun2018A-04Apr2019-v1/AOD'
+#config.General.requestName = 'HIMB10_RERECO_V0Skim_v3'
+#config.Data.inputDataset = '/HIMinimumBias10/HIRun2018A-04Apr2019-v1/AOD'
+#try:
+#        crabCommand('submit', config = config)
+#except HTTPException as hte:
+#        print "Failed submitting task: %s" % (hte.headers)
+#except ClientException as cle:
+#        print "Failed submitting task: %s" % (cle)
+#
+#config.General.requestName = 'HIMB9_RERECO_V0Skim_v3'
+#config.Data.inputDataset = '/HIMinimumBias9/HIRun2018A-04Apr2019-v1/AOD'
+#try:
+#        crabCommand('submit', config = config)
+#except HTTPException as hte:
+#        print "Failed submitting task: %s" % (hte.headers)
+#except ClientException as cle:
+#        print "Failed submitting task: %s" % (cle)
+#
+#config.General.requestName = 'HIMB8_RERECO_V0Skim_v3'
+#config.Data.inputDataset = '/HIMinimumBias8/HIRun2018A-04Apr2019-v1/AOD'
+#try:
+#        crabCommand('submit', config = config)
+#except HTTPException as hte:
+#        print "Failed submitting task: %s" % (hte.headers)
+#except ClientException as cle:
+#        print "Failed submitting task: %s" % (cle)
+#
+#config.General.requestName = 'HIMB7_RERECO_V0Skim_v3'
+#config.Data.inputDataset = '/HIMinimumBias7/HIRun2018A-04Apr2019-v1/AOD'
+#try:
+#        crabCommand('submit', config = config)
+#except HTTPException as hte:
+#        print "Failed submitting task: %s" % (hte.headers)
+#except ClientException as cle:
+#        print "Failed submitting task: %s" % (cle)
+#
+#config.General.requestName = 'HIMB6_RERECO_V0Skim_v3'
+#config.Data.inputDataset = '/HIMinimumBias6/HIRun2018A-04Apr2019-v1/AOD'
+#try:
+#        crabCommand('submit', config = config)
+#except HTTPException as hte:
+#        print "Failed submitting task: %s" % (hte.headers)
+#except ClientException as cle:
+#        print "Failed submitting task: %s" % (cle)
+#
+#config.General.requestName = 'HIMB5_RERECO_V0Skim_v3'
+#config.Data.inputDataset = '/HIMinimumBias5/HIRun2018A-04Apr2019-v1/AOD'
+#try:
+#        crabCommand('submit', config = config)
+#except HTTPException as hte:
+#        print "Failed submitting task: %s" % (hte.headers)
+#except ClientException as cle:
+#        print "Failed submitting task: %s" % (cle)
+#
+config.General.requestName = 'HIMB0_RERECO_V0Skim_v3'
+config.Data.inputDataset = '/HIMinimumBias0/HIRun2018A-04Apr2019-v1/AOD'
 try:
         crabCommand('submit', config = config)
 except HTTPException as hte:
