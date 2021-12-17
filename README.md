@@ -29,6 +29,7 @@
 ## Wrong Sign (Same Sign) pair V0 Skim
 
 - `/HIMinimumBias19/qwang-V0SkimWrongSign_v3-5f932986cf38f9e8dbd6c3aea7f6c2b4/USER`
+- `/HIMinimumBias2/qwang-V0SkimWrongSign_v3-5f932986cf38f9e8dbd6c3aea7f6c2b4/USER`
 
 ## Setting up
 
